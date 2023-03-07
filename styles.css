@@ -1,0 +1,212 @@
+body{
+  margin: 0;
+  padding:0;
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+
+}
+.spliter{
+  width:80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  letter-spacing: 10px;
+  font-size: 16px;
+  color: hsl(183, 100%, 15%);
+}
+.actual-container{
+width:70%;
+margin-left: auto;
+margin-right: auto;
+background-color: hsl(0, 0%, 100%);
+margin-top: 100px;
+border-radius: 30px;
+
+margin-bottom: 100px;
+
+}
+.first-col-content{
+  padding:30px;
+
+}
+
+input[type="radio"]{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  display: inline-block;
+}
+
+.tip label {
+
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  padding: 15px 50px;
+  border-radius: 5px;
+  transition: all .3s ease-out;
+
+}
+input[type="radio"]:checked + label{
+  background-color:  hsl(172, 67%, 45%);
+}
+.custom{
+  height: 50px;
+  width:130px;
+margin-left: 10px;
+  }
+.tip{
+  margin-top: 50px;
+}
+h4{
+
+  margin-left: 10px;
+}
+.bill{
+  margin-left: 7px;
+}
+.bill h4{
+  padding: 0;
+  margin-bottom:  10px;
+  margin-left: 0px;
+}
+.bill-input{
+
+
+  width:100%;
+}
+.people{
+margin-top: 50px;
+
+
+}
+.people-heading{
+  display:inline;
+  margin-left: 7px;
+
+}
+.people-paragraph{
+  display: inline;
+  margin-left: 50px;
+  color:red;
+  display: none;
+}
+.people-input{
+  margin-top: 10px;
+  width:100%;
+}
+.type{
+   border: 2px solid;
+}
+.type:focus{
+
+    outline: none !important;
+     border-color: hsl(172, 67%, 45%);
+
+border-width: medium;
+}
+.second-col-content{
+width:90%;
+margin-left: auto;
+margin-right: auto;
+background-color: hsl(183, 100%, 15%);
+border-radius: 30px;
+margin-top: 59px;
+height: 80%;
+
+
+}
+.second-container{
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.amount{
+color:hsl(0, 0%, 100%);
+
+
+}
+.person{
+  margin-left: 10px;
+  color:hsl(186, 14%, 43%);
+
+
+
+}
+.price{
+  margin-left:20%;
+color:hsl(172, 67%, 45%);
+
+
+
+}
+.reset{
+  margin-top: 70px;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  height:50px;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 30px;
+}
+.button-reset{
+  text-align: center;
+}
+@media only screen and (max-width:1510px) {
+  .tip label {
+
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: all .3s ease-out;
+
+  }
+  .custom{
+    height: 50px;
+    width:70px;
+  margin-left: 10px;
+    }
+
+}
+@media only screen and (max-width:1010px){
+
+.first-col-content{
+  padding-left:0;
+  padding-right:0;
+}
+
+}
+@media only screen and (max-width:426px){
+body{
+  font-size: 80%;
+}
+.container{
+  padding-left: 0;
+  padding-right: 0;
+}
+h4{
+  font-size: 1rem;
+}
+.bill-input{
+  width:90%;
+}
+.people-input{
+  width:90%;
+  margin-left: 7px;
+}
+.reset{
+  margin-top: 0px;
+
+}
+.button-reset{
+  padding-bottom: 50px;
+}
+
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="spliter">
+  <h2>SPLI</h2>
+  <h2>TIER</h2>
+</div>
+<div class="actual-container">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="first-col-content">
+          <div class="bill">
+          <h4 class="bill-heading">Bill</h4>
+
+
+            <input type="text" name="" value="" class="bill-input type">
+          </div>
+          <div class="tip">
+            <h4>select tip %</h4>
+            <input type="radio" name="size" id="5p" value="5"  class="percent" onclick="calculate(5)"/>
+ <label for="5p">05%</label>
+
+ <input type="radio" name="size" id="10p" value="10"  class="percent"  onclick="calculate(10)" />
+ <label for="10p">10%</label>
+
+   <input type="radio" name="size" id="15p" value="15"  class="percent" onclick="calculate(15)"/>
+ <label for="15p">15%</label>
+ <br />
+ <br />
+ <input type="radio" name="size" id="25p" value="25"  class="percent" onclick="calculate(25)" />
+<label for="25p">25%</label>
+
+<input type="radio" name="size" id="50p" value="50"  class="percent"  onclick="calculate(50)"/>
+<label for="50p">50%</label>
+<input type="text" name="" value="" class="custom type" placeholder="custom">
+
+          </div>
+          <div class="people">
+            <h4 class="people-heading">Number of People</h4>
+            <p class="people-paragraph">can't be zero</p>
+            <input type="text" name="" value="" class="people-input type">
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+
+
+        <div class="second-col-content">
+          <div class="container second-container">
+    <div class="row">
+      <div class="col col-6 col-sm-6 col-md-6 col-lg-6 ">
+        <h4 class="amount">Tip Amount</h4>
+        <p class="person">/person</p>
+      </div>
+      <div class="col col-6 col-sm-6 col-md-6 col-lg-6 ">
+        <h2 class="price" id="tip-amount">$0.00</h2>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col col-6 col-sm-6 col-md-6 col-lg-6 ">
+         <h4 class="amount">Total</h4>
+         <p class="person">/person</p>
+      </div>
+      <div class="col col-6 col-sm-6 col-md-6 col-lg-6 ">
+        <h2 class="price" id="total-amount">$0.00</h2>
+      </div>
+
+    </div>
+  </div>
+  <div class="button-reset">
+  <button type="button" name="button" class="reset" onclick="window.location.reload(true)">RESET</button>
+  </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+  <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+<script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>
